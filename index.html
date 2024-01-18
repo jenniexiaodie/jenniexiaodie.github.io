@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Cool Website</title>
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a202c;
+            color: #ffffff;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            background-color: #2d3748;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav li {
+            margin: 0 20px;
+        }
+
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #40424a;
+        }
+
+        /* Header */
+        .header {
+            height: 100vh;
+            background-image: url('your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        /* Main Content */
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px;
+        }
+
+        .main h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .main p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+
+        /* Animations */
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 40px, 0);
+                opacity: 0;
+            }
+            to {
+                transform: none;
+                opacity: 1;
+            }
+        }
+
+        .fadeInUp {
+            animation-name: fadeInUp;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+   <header class="header">
+        <h1 class="animated fadeInUp">My Name</h1>
+        <p class="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </header>
+    <main class="main">
+       <section id="about">
+            <h2 class="animated fadeInUp">About Me</h2>
+            <p class="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+        </section>
+       <section id="work">
+            <h2 class="animated fadeInUp">My Work</h2>
+            <p class="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+        </section>
+       <section id="contact">
+            <h2 class="animated fadeInUp">Contact Me</h2>
+            <p class="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+        </section>
+    </main>
+   <script>
+        // Add your JavaScript code here if needed
+    </script>
+</body>
+</html>
+
